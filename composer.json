@@ -1,0 +1,52 @@
+{
+    "name": "digitalmeat/meatpress-helpers",
+    "description": "Meatpress translation helper: a single __() serving both the Laravel and WordPress catalogues.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "meatpress",
+        "translation",
+        "laravel",
+        "wordpress"
+    ],
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "laravel/framework": "^13.0",
+        "laravel/pint": "^1.22",
+        "mockery/mockery": "^1.6",
+        "pestphp/pest": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Meatpress\\HelperOverrider\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Meatpress\\HelperOverrider\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "13.x-dev"
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "test:lint": "pint --test",
+        "test": "pest"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
