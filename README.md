@@ -1,6 +1,6 @@
 # Meatpress Helpers
 
-Meatpress Helpers provides a single `__()` translation function for Laravel and WordPress. [Meatpress Framework](https://github.com/digitalmeat/meatpress-framework) installs it as a Composer dependency. The package loads before Laravel's helpers and works with the WordPress core patch included in [Meatpress Base](https://github.com/digitalmeat/meatpress-base).
+Meatpress Helpers provides a single `__()` translation function for Laravel and WordPress. [Meatpress Framework](https://github.com/digitalmeat/meatpress-framework) installs it as a Composer dependency. The package loads before Laravel's helpers and works with the WordPress core patch included in [the Framework repository](https://github.com/digitalmeat/meatpress-framework/blob/main/patches/wordpress-core.patch).
 
 ## Usage
 
